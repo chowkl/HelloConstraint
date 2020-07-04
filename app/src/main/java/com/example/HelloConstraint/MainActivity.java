@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         Toast toast = Toast.makeText(this, " Reset ",Toast.LENGTH_SHORT);
         toast.show();
         mCount = 0;
-        mShowCount = (TextView) findViewById(R.id.show_count);
+        mShowCount.setText(Integer.toString(mCount));
         view.setBackgroundColor(Color.GRAY);
         findViewById(R.id.button_count).setBackgroundColor(Color.BLUE);
 
